@@ -37,6 +37,7 @@ SHODAN_API_KEY = "your_shodan_api_key_here"
     python scanner.py
 
 Project Structure:
+
 security-misconfig-scanner/
 │
 ├── scanner.py              # Main entry point
