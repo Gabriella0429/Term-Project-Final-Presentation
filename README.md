@@ -21,14 +21,18 @@ Technologies Used:
 - Pandas (for report generation)
 
 Setup Instructions:
+
   1).Clone the repository
     https://github.com/yourusername/security-misconfig-scanner.git
 cd security-misconfig-scanner
+
   2).Install dependencies
     pip install -r requirements.txt
+    
   3).Add your Shodan API key
     Create a file named config.py and include:
 SHODAN_API_KEY = "your_shodan_api_key_here"
+
   4).Run the scanner
     python scanner.py
 
