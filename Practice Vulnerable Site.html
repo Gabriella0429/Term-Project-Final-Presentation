@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vulnerable Practice Site</title>
+  <!-- Intentionally missing security headers -->
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script> <!-- Intentionally outdated JS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+      margin-top: 50px;
+      border-radius: 10px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    input[type="text"], input[type="password"] {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    a {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Vulnerable Practice Site</h1>
+    <p>This page intentionally includes common misconfigurations for security testing purposes.</p>
+
+    <h2>Login (Default Credentials: admin / admin)</h2>
+    <form action="/login" method="post">
+      <input type="text" name="username" placeholder="Username" value="admin">
+      <input type="password" name="password" placeholder="Password" value="admin">
+      <button type="submit">Login</button>
+    </form>
+
+    <h2>Admin Panel</h2>
+    <p>This page is publicly accessible without authentication:</p>
+    <a href="/admin.html">Go to Admin Panel</a>
+
+    <h2>Configuration Exposure</h2>
+    <p>Click to access potentially sensitive files:</p>
+    <a href="/.env">.env File</a>  
+    <a href="/.git/config">.git/config</a>
+  </div>
+</body>
+</html>
