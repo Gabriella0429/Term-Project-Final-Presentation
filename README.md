@@ -13,6 +13,7 @@ Features:
 
 Technologies Used:
 - Python
+- Flask
 - Selenium
 - BeautifulSoup
 - Requests
@@ -56,7 +57,7 @@ Damn Vulnerable Web Application (DVWA)
 
 Authors:
 Gabriella Cedillos-Dixon and 
-Taha Soil
+Taha Sohail
 
 License:
 This project is for educational use only.
