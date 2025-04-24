@@ -55,7 +55,7 @@ OWASP Juice Shop
 Damn Vulnerable Web Application (DVWA)
 
 Authors:
-Gabriella Cedillos-Dixon
+Gabriella Cedillos-Dixon and 
 Taha Soil
 
 License:
