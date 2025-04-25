@@ -36,8 +36,17 @@ SHODAN_API_KEY = "your_shodan_api_key_here"
 
   4).Run the scanner
     python scanner.py
+to run nmap, the nmap must be downloaded and path should be program C:/Program Files(x86)\Nmap
 
 Project Structure:
+1. Run your Flask website: open a new terminal within VsCode python website.py
+2. Keep that terminal open (the server is running there). Now open another terminal and run:Python Scanner.py
+
+Quick Extra Tip:
+When you run Scanner.py and it asks:
+Website URL → http://127.0.0.1:5000
+IP Address → just 127.0.0.1 (not 127.0.0.1:5000)
+Because port (5000) is only for the web, not for raw IP scanning
 
 security-misconfig-scanner/
 │
@@ -47,6 +56,7 @@ security-misconfig-scanner/
 ├── report_generator.py     # Exports results
 ├── config.py               # API keys and settings
 └── requirements.txt        # Python dependencies
+
 
 Usage:
 You will be prompted to enter a URL and IP address to scan. After the scan, results will be saved to scan_report.json and scan_report.csv.
