@@ -10,79 +10,18 @@ html_content = """
 <head>
   <meta charset="UTF-8">
   <title>Vulnerable Practice Site</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #e0eafc, #cfdef3);
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 600px;
-      margin: 60px auto;
-      background-color: #fff;
-      padding: 40px 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      color: #2c3e50;
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #34495e;
-      font-size: 18px;
-      margin-top: 30px;
-    }
-    p {
-      font-size: 14px;
-      color: #555;
-      line-height: 1.6;
-    }
-    input[type="text"], input[type="password"] {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0 20px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
-    }
-    button {
-      width: 100%;
-      padding: 12px;
-      background-color: #003366;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #001f4d;
-    }
-    a {
-      color: #e74c3c;
-      display: inline-block;
-      margin-top: 8px;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    body { font-family: Arial; background-color: #f4f4f4; }
+    .container { width: 80%; margin: auto; padding: 20px; background: white; margin-top: 50px; border-radius: 10px; }
+    input { padding: 10px; margin: 10px 0; width: 100%; }
+    button { padding: 10px 20px; background: #003366; color: white; border: none; cursor: pointer; }
+    a { color: red; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Welcome to the Vulnerable Practice Site</h1>
     <p>This page intentionally includes common misconfigurations for security testing purposes.</p>
-
     <h2>Login (Default Credentials: admin / admin)</h2>
     <form method="POST">
       <input type="text" name="username" placeholder="Username" value="admin">
@@ -102,6 +41,7 @@ html_content = """
 </body>
 </html>
 """
+
 
 
 # Main login route
